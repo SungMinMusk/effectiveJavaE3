@@ -6,13 +6,10 @@ public abstract class Number {
     public static Number strToNum(String s) {
 
         // 장점3, 4
-
-
-        if(s.length() < 5) {
+        if (s.length() < 5) {
             return new ShortNumber(s);
-        }
-        else {
-            return new LongNumber(s);
+        } else {
+            return new JumboNumber(s);
         }
 
         // 클라이언트는 ~~item1.Number 클래스의 존재를 모른다.
