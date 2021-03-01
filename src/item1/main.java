@@ -6,7 +6,7 @@ public class main {
         Number a = Number.strToNum("999");
         System.out.println(a + "    " + a.getClass());
 
-        Number b = Number.strToNum("99999999999999");
+        Number b = Number.strToNum("999999");
         System.out.println(b + "    " + b.getClass());
     }
 }
