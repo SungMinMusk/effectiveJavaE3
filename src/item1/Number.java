@@ -3,7 +3,7 @@ package item1;
 public abstract class Number {
 
     // 장점1
-    public static Number strToNum(String s) {
+    public static Number fromStr(String s) {
 
         // 장점3, 4
         if (s.length() < 5) {
