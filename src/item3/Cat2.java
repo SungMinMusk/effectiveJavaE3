@@ -1,7 +1,5 @@
 package item3;
 
-import java.util.function.Supplier;
-
 public class Cat2 {
     public static final Cat2 INSTANCE = new Cat2();
 
