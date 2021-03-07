@@ -14,7 +14,7 @@ public class Student {
         private final int number;
 
         //선택 매개 변수 - 기본값으로 초기화 한다.
-        private String sex     = "female";
+        private String sex     = "woman";
         private int age        = 0;
         private int height     = 0;
         private int weight     = 0;
