@@ -3,7 +3,7 @@ package item2;
 public class main {
     public static void main(String[] args) {
 
-        //메서드 연쇄(method chaining)
+        // 메서드 연쇄(method chaining)
         Student student = new Student.Builder("ksm",999)
                 .sex("man")
                 .age(1)
