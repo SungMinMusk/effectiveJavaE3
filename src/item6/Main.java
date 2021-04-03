@@ -1,6 +1,4 @@
-package item5;
-
-import item4.MathUtil;
+package item6;
 
 public class Main {
     public static void main(String[] args) throws Exception {
