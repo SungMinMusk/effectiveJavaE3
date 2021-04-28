@@ -2,7 +2,7 @@ package item8;
 
 import java.lang.ref.Cleaner;
 
-public class Room2 implements AutoCloseable{
+public class Room2 implements AutoCloseable {
     private static final Cleaner cleaner = Cleaner.create();
 
     // 청소가 필요한 자원. 절대 Room을 참조해서는 안 된다!
