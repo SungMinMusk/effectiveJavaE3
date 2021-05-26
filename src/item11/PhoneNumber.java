@@ -7,25 +7,22 @@ public class PhoneNumber {
     int prefix;
     int lineNum;
 
-
     public PhoneNumber(short a,int b,int c) {
         area = a;
         prefix = b;
         lineNum = c;
     }
-//    @Override
-//    public int hashCode() {
-//
-//        int result = Short.hashCode(area);
-//        result = 31 * result * Integer.hashCode(prefix);
-//        result = 31 * result * Integer.hashCode(lineNum);
-//
-//        return result;
-//    }
 
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(area,prefix,lineNum);
-//    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof PhoneNumber)) return false;
+        PhoneNumber that = (PhoneNumber) o;
+        return area == that.area && prefix == that.prefix && lineNum == that.lineNum;
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(area, prefix, lineNum);
+    }
 }

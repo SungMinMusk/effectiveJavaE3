@@ -19,4 +19,5 @@ public class ColorPoint extends Point{
 
         return super.equals(o) && ((ColorPoint) o).color == color;
     }
+
 }

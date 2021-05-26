@@ -26,7 +26,9 @@ public class Point implements Comparable<Point> {
     public int compareTo(Point p) {
         return COMPARATOR.compare(this, p);
     }
+
     private static final Comparator<Point> COMPARATOR =
             comparingInt((Point p) -> p.x)
-            .thenComparingInt((Point p) -> p.y);
+            .thenComparingInt((Point p) -> p.y).reversed();
+
 }

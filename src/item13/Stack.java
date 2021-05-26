@@ -3,7 +3,7 @@ package item13;
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
-public class Stack implements Cloneable {
+public class Stack {
     private PhoneNum[] elements;
     private int size = 0;
     private static final int DEFAULT_INITIAL_CAPACITY = 16;
@@ -56,49 +56,15 @@ public class Stack implements Cloneable {
         return stringBuilder.toString();
     }
 
-    @Override
-    public Stack clone() {
-        try {
 
-            return (Stack) super.clone();
-        } catch (CloneNotSupportedException e) {
-            throw new AssertionError();
+
+    public static Stack copy(Stack st) {
+        Stack stack = new Stack();
+        stack.size = st.size;
+        for (int i = 0; i < st.size; i++) {
+            stack.elements[i] = st.elements[i].clone();
         }
+        return stack;
     }
-
-//    @Override
-//    public Stack clone() {
-//        try {
-//            Stack stack = (Stack) super.clone();
-//            stack.elements = this.elements.clone();
-//            return stack;
-//        } catch (CloneNotSupportedException e) {
-//            throw new AssertionError();
-//        }
-//    }
-
-//    @Override
-//    public Stack clone() {
-//        try {
-//            Stack stack = (Stack) super.clone();
-//            stack.elements = this.elements.clone();
-//            for (int i = 0; i < size; i++) {
-//                stack.elements[i] = this.elements[i].clone();
-//            }
-//            return stack;
-//
-//        } catch (CloneNotSupportedException e) {
-//            throw new AssertionError();
-//        }
-//    }
-
-//    public static Stack copy(Stack st) {
-//        Stack stack = new Stack();
-//        stack.size = st.size;
-//        for (int i = 0; i < st.size; i++) {
-//            stack.elements[i] = st.elements[i].clone();
-//        }
-//        return stack;
-//    }
 
 }
