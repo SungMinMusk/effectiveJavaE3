@@ -1,8 +1,5 @@
 package item17;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-
 public class Main {
 
     public static void complexEx() {
