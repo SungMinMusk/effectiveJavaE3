@@ -1,5 +1,7 @@
 package item17;
 
+import java.math.BigInteger;
+
 public class Main {
 
     public static void complexEx() {
@@ -25,7 +27,6 @@ public class Main {
         s += "@";
         System.out.println("String after: " + s + "   " + s.hashCode());
 
-
         StringBuilder st = new StringBuilder();
         st.append("@");
         System.out.println("StringBuilder before: " + st + "   " + st.hashCode());
@@ -36,7 +37,7 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
-        complexEx();
-        //stringEx();
+//        complexEx();
+        stringEx();
     }
 }

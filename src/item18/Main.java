@@ -20,9 +20,9 @@ public class Main {
 
         System.out.println(mySet2.getAddCount());
 
-        InstrumentedGuavaSet<String> mySet3 = new InstrumentedGuavaSet<>(new HashSet<>());
-        mySet3.addAll(List.of("1","2","3"));
-
-        System.out.println(mySet2.getAddCount());
+//        InstrumentedGuavaSet<String> mySet3 = new InstrumentedGuavaSet<>(new HashSet<>());
+//        mySet3.addAll(List.of("1","2","3"));
+//
+//        System.out.println(mySet3.getAddCount());
     }
 }
